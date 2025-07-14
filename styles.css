@@ -1,0 +1,53 @@
+/* core palette */
+:root {
+  --gold: #c7a349;        /* matches icon fill */
+  --black: #000000;
+}
+
+/* page reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black);
+  color: var(--gold);
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+}
+
+/* logo */
+#logo {
+  width: 180px;      /* adjust if needed */
+  margin: 24px auto 12px;
+  display: block;
+}
+
+/* navigation icon bar */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 36px;
+}
+
+.icon-row img {
+  width: 48px;             /* icon size */
+  height: 48px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 2px var(--gold));
+  transition: transform 0.2s ease;
+}
+
+.icon-row img:hover {
+  transform: scale(1.15);
+}
+
+/* headings */
+h2 {
+  font-size: 40px;
+  margin: 60px 0 20px;
+  letter-spacing: 2px;
+}
